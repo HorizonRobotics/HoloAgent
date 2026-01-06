@@ -8,7 +8,7 @@ main:
   scene_id: icra_ic4f # rosbag2_2025_04_08-21_33_17_new # 
   dataset_path: /mnt/holoagent/fsrvln/rgbd_datasets/
   graph_path: /mnt/holoagent/fsrvln/scene_graphs_opensource/horizon/icra_ic4f/graph_20260106201111
-  save_path:  /mnt/disk2/hovsg/HOV-SG/data/our_dataset/g1_navi/scene_graphs_opensource
+  save_path:  /mnt/holoagent/fsrvln/scene_graphs_opensource
   long_query:
     spec: [obj, room, floor] # [obj, room], [obj, floor], [obj].
 models:
