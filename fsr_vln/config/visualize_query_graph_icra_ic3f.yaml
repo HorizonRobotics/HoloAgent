@@ -1,0 +1,17 @@
+main:
+  device: cuda
+  use_gpt: false
+  spatial_reasoning_method: auto_region # auto_region, human_assign, none
+  fast_slow_method: fast_match # slow_reasoning # fast_match
+  depth_cut: 6.0
+  dataset: horizon 
+  scene_id: icra_ic3f
+  dataset_path: /mnt/holoagent/fsrvln/rgbd_datasets/
+  graph_path: /mnt/holoagent/fsrvln/scene_graphs_opensource/horizon/icra_ic3f/graph_20250906174017
+  save_path:  /mnt/holoagent/fsrvln/scene_graphs_opensource
+  long_query:
+    spec: [obj, room, floor] # [obj, room], [obj, floor], [obj].
+models:
+  clip:
+    type: ViT-L/14 #ViT-B-32 #ViT-H-14
+    checkpoint: checkpoints/open_clip_pytorch_model.bin 

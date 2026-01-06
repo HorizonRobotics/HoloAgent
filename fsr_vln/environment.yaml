@@ -1,0 +1,32 @@
+name: fsrvln
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - cudatoolkit=11.8
+  - pip
+  - pip:
+      - torch==2.4.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+      - torchvision==0.19.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+      - torchaudio==2.4.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+      - matplotlib==3.7.3
+      - scipy
+      - open3d==0.18.0
+      - opencv-python
+      - git+ssh://git@github.com/facebookresearch/segment-anything.git
+      - torchmetrics
+      - ftfy
+      - tqdm
+      - open-clip-torch
+      - transformers
+      - openai
+      - plyfile
+      - hydra-core
+      - pyvista
+      - scikit-fmm      
+      - pathos
+      - oss2==2.9.1
+      - opencv-python-headless==4.8.1.78
+      - faiss-gpu==1.7.2

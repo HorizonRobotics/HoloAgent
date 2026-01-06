@@ -1,0 +1,15 @@
+main:
+  device: cuda
+  use_gpt: true
+  depth_cut: 10.0
+  dataset: hm3dsem 
+  scene_id: 00824-Dd4bFSTQ8gi 
+  dataset_path: /mnt/disk2/hovsg/HOV-SG/data/hm3dsem_walks/low_res_val/val
+  graph_path: /mnt/disk2/hovsg/HOV-SG/data/our_dataset/g1_navi/scene_graphs_icra_v0/hm3dsem/00824-Dd4bFSTQ8gi/graph_20250924142121
+  save_path:  /mnt/disk2/hovsg/HOV-SG/data/our_dataset/g1_navi/scene_graphs_icra_v0
+  long_query:
+    spec: [obj, room, floor] # [obj, room, floor], [obj, room], [obj, floor], [obj].
+models:
+  clip:
+    type: ViT-L/14 #ViT-B-32 #ViT-H-14
+    checkpoint: checkpoints/open_clip_pytorch_model.bin 

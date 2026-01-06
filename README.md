@@ -10,7 +10,25 @@ A unified, agentic system for general-purpose robots, enabling multi-modal perce
 <img src="docs/assets/FSR_VLN_framework.png" alt="Overall Framework" width="700"/>
 
 ## Checklist
-- [ ] Release the code of FSR-VLN.
+- [x] Release the code of FSR-VLN.
+
+
+## 🏗 Pipeline
+### 1. Semantic Mapping and Retrieval Pipeline
+- **Task:** Implement the semantic mapping and retrieval system based on the instructions in `fsr_vln/README.md`.
+- **Steps:**
+    1.  Download the necessary pre-trained model checkpoints.
+    2.  Download and configure the required datasets.
+    3.  Set up the environment and dependencies as specified.
+    4.  Run the complete pipeline to verify its functionality for semantic mapping and visual place retrieval.
+
+### 2. Navigation Agent Setup and Execution
+- **Task:** Set up and test the navigation agent according to `nav_agent/README.md`.
+- **Steps:**
+    1.  Install all required dependencies for the navigation environment.
+    2.  Configure the necessary parameters and environment settings.
+    3.  Execute the navigation agent to ensure it runs successfully and performs its intended tasks.
+
 
 ## 📚 Publications & Citation
 
