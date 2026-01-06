@@ -27,8 +27,6 @@ maintainers accept no liability for any license violations arising from such
 use.
 """
 from copy import deepcopy
-
-from memory.hmsg.graph.graph import Graph
 import hydra
 import open3d as o3d
 from omegaconf import DictConfig
@@ -36,6 +34,14 @@ import time
 import numpy as np
 import os
 import json
+import sys
+# 添加项目根目录到Python路径
+sys.path.insert(
+    0, os.path.dirname(
+        os.path.dirname(
+            os.path.dirname(
+                os.path.abspath(__file__)))))
+from memory.hmsg.graph.graph import Graph
 
 
 def visualize_and_save(room_pcd, obj_pcd, end_sphere, save_path="scene.png"):

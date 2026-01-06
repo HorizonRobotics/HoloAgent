@@ -25,6 +25,7 @@ cd HoloAgent/fsr_vln/
 # set up virtual environment and install habitat-sim afterwards separately to avoid errors.
 conda env create -f environment.yaml
 conda activate fsrvln
+# if use want to run scripts in env/habitat_sim/hm3dsem, please install habitat-sim with the following command
 conda install habitat-sim -c conda-forge -c aihabitat
 
 # set up the hmsg python package

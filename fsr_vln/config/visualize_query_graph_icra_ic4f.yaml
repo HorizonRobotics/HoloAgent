@@ -1,13 +1,13 @@
 main:
   device: cuda
-  use_gpt: true
+  use_gpt: false
   spatial_reasoning_method: auto_region # auto_region, human_assign, none
-  fast_slow_method: slow_reasoning # slow_reasoning # fast_match
+  fast_slow_method: fast_match # slow_reasoning # fast_match
   depth_cut: 10.0
   dataset: horizon 
   scene_id: icra_ic4f # rosbag2_2025_04_08-21_33_17_new # 
   dataset_path: /mnt/holoagent/fsrvln/rgbd_datasets/
-  graph_path: /mnt/disk2/hovsg/HOV-SG/data/our_dataset/g1_navi/scene_graphs_opensource/horizon/icra_ic4f/graph_20260104212900
+  graph_path: /mnt/holoagent/fsrvln/scene_graphs_opensource/horizon/icra_ic4f/graph_20260106201111
   save_path:  /mnt/disk2/hovsg/HOV-SG/data/our_dataset/g1_navi/scene_graphs_opensource
   long_query:
     spec: [obj, room, floor] # [obj, room], [obj, floor], [obj].

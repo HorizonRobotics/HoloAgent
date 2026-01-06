@@ -46,18 +46,17 @@ semantic_scene_reconstruction_unified.
 """
 
 
-# 添加项目根目录到Python路径
-from memory.hmsg.graph.graph import Graph
 import os
 import hydra
 from omegaconf import DictConfig
 import sys
+# 添加项目根目录到Python路径
 sys.path.insert(
     0, os.path.dirname(
         os.path.dirname(
             os.path.dirname(
                 os.path.abspath(__file__)))))
-
+from memory.hmsg.graph.graph import Graph
 
 def run_scene_reconstruction(params: DictConfig):
     """

@@ -197,7 +197,7 @@ class Room:
         """
         # import sys
         # sys.path.append("/mnt/disk2/hovsg/HOV-SG/hmsg/utils")
-        from hmsg.utils.llm_utils import infer_room_type_from_object_list_chat
+        from memory.hmsg.utils.llm_utils import infer_room_type_from_object_list_chat
 
         # use similarity of object text feature and room text feature
         if infer_method == "llm":
@@ -264,7 +264,7 @@ class Room:
         """
         # import sys
         # sys.path.append("/mnt/disk2/hovsg/HOV-SG/hmsg/utils")
-        from hmsg.utils.llm_utils import infer_room_type_from_object_list_chat
+        from memory.hmsg.utils.llm_utils import infer_room_type_from_object_list_chat
 
         # use similarity of object text feature and room text feature
         if infer_method == "label":
